@@ -1,0 +1,36 @@
+.commentHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  
+    .ownIndicator {
+      background-color: hsl(238, 40%, 52%);
+      padding: 2px 4px;
+      color: hsl(0, 0%, 100%);
+      font-size: 12px;
+    }
+  
+    .userImage {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+    }
+  
+    .username {
+      color: hsl(223, 19%, 93%);
+      font-weight: 500;
+    }
+
+    .createdAt {
+      color: hsl(223, 19%, 93%);
+      font-size: 1rem;
+      margin-left: auto;
+    }
+  
+    .actionButtons {
+      margin-left: auto;
+      display: flex;
+      gap: 16px;
+    }
+  }
+  

@@ -1,0 +1,30 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 500;
+  }
+  
+  .primary {
+    background-color: hsl(200, 80%, 50%);
+    color: hsl(0, 0%, 100%);
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: opacity 200ms;
+  
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+  
+  .ghost {
+    color: hsl(200, 80%, 50%);
+    background-color: transparent;
+  }
+  
+  .warn {
+    color: hsl(358, 79%, 66%);
+    background-color: transparent;
+  }

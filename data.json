@@ -1,0 +1,88 @@
+{
+    "currentUser": {
+      "image": {
+        "png": "./images/avatars/image-burcu.png",
+        "webp": "./images/avatars/image-burcu.webp"
+      },
+      "username": "burcu"
+    },
+    "comments": [
+      {
+        "id": 1,
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+        "createdAt": "1 minute ago",
+        "score": 12,
+        "user": {
+          "image": {
+            "png": "./images/avatars/image-user.png",
+            "webp": "./images/avatars/image-user.webp"
+          },
+          "username": "Fourthy"
+        },
+        "replies": []
+      },
+      {
+        "id": 2,
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+        "image": {
+          "png": "./images/avatars/image-crypto.png",
+          "webp": "./images/avatars/image-crypto.webp"
+        },
+        "createdAt": "3 minute ago",
+        "score": 12,
+        "user": {
+          "image": {
+            "png": "./images/avatars/image-CryptoCurrent.png",
+            "webp": "./images/avatars/image-CryptoCurrent.webp"
+          },
+          "username": "CryptoCurrent"
+        },
+        "replies": []
+      },
+      {
+        "id": 3,
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+        "createdAt": "5 minutes ago",
+        "score": 5,
+        "user": {
+          "image": {
+            "png": "./images/avatars/image-Prettyflw.png",
+            "webp": "./images/avatars/image-Prettyflw.webp"
+          },
+          "username": "Prettyflw"
+        },
+        
+        "replies": [
+          {
+            "id": 4,
+            "content": "If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.",
+            "createdAt": "7 minutes ago",
+            "score": 4,
+            "replyingTo": "Prettyflw",
+            "user": {
+              "image": {
+                "png": "./images/avatars/image-michaelsaylor.png",
+                "webp": "./images/avatars/image-michaelsaylor.webp"
+              },
+              "username": "michaelsaylor"
+            }
+          },
+          {
+            "id": 5,
+            "content": "I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.",
+            "createdAt": "2 days ago",
+            "score": 2,
+            "replyingTo": "michaelsaylor",
+            "user": {
+              "image": {
+                "png": "./images/avatars/image-burcu.png",
+                "webp": "./images/avatars/image-burcu.webp"
+              },
+              "username": "burcu"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
