@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./styles.module.scss";
 import { useComment } from "../useComment";
 
 function Header() {
@@ -9,15 +8,15 @@ function Header() {
   } = useComment();
 
   return (
-    <div className={styles.commentHeader}>
+    <div className="d-flex align-items-center gap-3">
       <img
-        className={styles.userImage}
+        className="rounded-circle" style={{width:'36px', height:'36px'}}
         src={user.image.webp}
         alt={user.username}
       />
-      <p className={styles.username}>{user.username}</p>
-      {ownByCurrentUser && <span className={styles.ownIndicator}>you</span>}
-      <p className={styles.createdAt}>{createdAt}</p>
+      <p className="text-white-75 fw-bold ">{user.username}</p>
+      {ownByCurrentUser && <span className="text-white-75 fw-light bg-success rounded ">you</span>}
+      <p className="text-white-50 ms-auto">{createdAt}</p>
     </div>
   );
 }

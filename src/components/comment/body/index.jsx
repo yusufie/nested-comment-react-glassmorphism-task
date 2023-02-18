@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./styles.module.scss";
 
 import { useComment } from "../useComment";
 import { Edit } from "./edit";
@@ -17,7 +16,7 @@ function Body() {
   const CurrentMode = Modes[mode];
 
   return (
-    <div className={styles.commentText}>
+    <div className="text-start">
       <CurrentMode />
     </div>
   );

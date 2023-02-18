@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "./styles.module.scss";
 
 import { TextArea } from "../textarea";
 import { Button } from "../button";
@@ -17,8 +16,8 @@ function NewCommentEditor({ username, image, isReply = false, onSend }) {
   };
 
   return (
-    <div className={styles.editorWrapper}>
-      <img className={styles.userImage} src={image.webp} alt={username} />
+    <div className="d-flex align-items-start bg-black rounded p-3">
+      <img className="rounded-circle me-3" style={{width:'36px', height:'36px'}} src={image.webp} alt={username} />
       <TextArea
         value={comment}
         onChange={handleChangeComment}

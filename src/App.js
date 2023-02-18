@@ -11,19 +11,17 @@ function App() {
       <>
         <div className="App" 
         style={
-          {
-            
-            backgroundColor: '#101E42',
-            backgroundImage: `url(${background})`,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundAttachment: 'fixed',
-            fontFamily: 'Rubik',
-            fontSize: '1.2rem',
-
-          }
-        }>
+                {
+                  backgroundColor: '#101E42',
+                  backgroundImage: `url(${background})`,
+                  backgroundPosition: 'center',
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundAttachment: 'fixed',
+                  fontFamily: 'Rubik',
+                  fontSize: '1.2rem',
+                }
+              }>
 
           <Navbar />
 

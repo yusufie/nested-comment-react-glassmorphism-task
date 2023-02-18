@@ -1,8 +1,7 @@
 import React from "react";
-import styles from "./styles.module.scss";
 
 function TextArea({ ...props }) {
-  return <textarea className={styles.textArea} rows={4} {...props} />;
+  return <textarea className=" bg-black border border-secondary text-white rounded p-1 w-100" rows="4" {...props} />;
 }
 
 export { TextArea };

@@ -2,7 +2,6 @@ import React from "react";
 
 import { Button } from "../../button";
 import { useComment } from "../useComment";
-import styles from "./styles.module.scss";
 
 function Reactions() {
   const {
@@ -12,21 +11,21 @@ function Reactions() {
   } = useComment();
 
   return (
-    <div className={styles.reactions}>
+    <div className=" d-flex flex-row align-items-center rounded border-0">
       <Button
-        className={styles.reactionButton}
+        className="w-100 bg-transparent border-0"
         aria-labelledby="Positive reaction button"
         onClick={onPositiveReaction}
       >
-        <img src="./images/icon-like.svg" aria-hidden="true" height={30} />
+        <img src="./images/icon-like.svg" aria-hidden="true" height={30} alt="like-icon" />
       </Button>
-      <p className={styles.score}>{score}</p>
+      <p className=" text-white-75">{score}</p>
       <Button
-        className={styles.reactionButton}
+        className="w-100 bg-transparent border-0"
         aria-labelledby="Negative reaction button"
         onClick={onNegativeReaction}
       >
-        <img src="./images/icon-dislike.svg" aria-hidden="true" height={30} />
+        <img src="./images/icon-dislike.svg" aria-hidden="true" height={30} alt="dislike-icon"/>
       </Button>
     </div>
   );

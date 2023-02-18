@@ -71,7 +71,6 @@ const CommentProvider = ({ children, data }) => {
       onSendReply,
       comment,
       isReplying,
-      onSendReply,
       onPositiveReaction,
       onNegativeReaction,
       setEditting,

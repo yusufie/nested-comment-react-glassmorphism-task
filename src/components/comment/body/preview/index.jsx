@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./styles.module.scss";
 
 import { useComment } from "../../useComment";
 
@@ -10,15 +9,15 @@ function Preview() {
 
   return (
     <div>
-      <p>
+      <p className="text-white-75">
         {!!replyingTo && (
-          <span className={styles.commentReplyingTo}>@{replyingTo}&nbsp;</span>
+          <span className="fw-bold text-info">@{replyingTo}&nbsp;</span>
         )}
         {content}
       </p>
             {image && (
               <img
-                className={styles.commentImage}
+                className="w-100 h-100 object-fit-cover rounded"
                 src={image.webp}
                 alt={user.username}
               />

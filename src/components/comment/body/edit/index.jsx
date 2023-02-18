@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "./styles.module.scss";
 
 import { TextArea } from "../../../textarea";
 import { Button } from "../../../button";
@@ -23,10 +22,10 @@ function Edit() {
   };
 
   return (
-    <div className={styles.editWrapper}>
+    <div className="d-flex flex-column gap-2">
       <TextArea value={comment} onChange={handleChangeComment} />
       <Button
-        className={styles.updateButton}
+        className="ms-auto"
         onClick={handleUpdate}
         variant="primary"
       >

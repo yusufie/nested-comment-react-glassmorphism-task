@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import { Comment } from "../comment";
 import { NewCommentEditor } from "../new-comment-editor";
 
-import styles from "./styles.module.scss";
-
 function Conversation({ comments: allComments, currentUser }) {
   const [comments, setComments] = useState(allComments ?? []);
 
@@ -23,7 +21,7 @@ function Conversation({ comments: allComments, currentUser }) {
   };
 
   return (
-    <div className={styles.conversationWrapper}>
+    <div className="d-flex flex-column gap-4 w-100">
       {comments.length > 0 &&
         comments.map((comment) => (
           <Comment data={{ comment, currentUser }} key={comment.id} />

@@ -6,7 +6,6 @@ import { Body } from "./body";
 import { Footer } from "./footer";
 import { Replies } from "./replies";
 import { NewCommentEditor } from "../new-comment-editor";
-import styles from "./styles.module.scss";
 
 function Comment() {
   const { comment, currentUser, isReplying, onSendReply } = useComment();
@@ -17,8 +16,8 @@ function Comment() {
 
   return (
     <>
-      <div className={styles.commentWrapper}>
-        <div className={styles.commentContent}>
+      <div className="d-flex align-items-start bg-black rounded p-3 w-100">
+        <div className="d-flex flex-column flex-grow-1 gap-1 ">
           <Header />
           <Body />
           <Footer />
